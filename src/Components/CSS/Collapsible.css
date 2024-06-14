@@ -1,0 +1,54 @@
+/* Collapsible Container */
+.collapsible-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease; /* Add transition for box-shadow */
+}
+
+/* Collapsible Header */
+.collapsible-header {
+  background-color: #f4f4f4;
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Add transition for background-color */
+}
+
+/* Collapsible Icon */
+.collapsible-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  transition: transform 0.3s ease; /* Add transition for transform */
+}
+
+/* Collapsible Title */
+.collapsible-title {
+  font-weight: bold;
+}
+
+/* Collapsible Content */
+.collapsible-content {
+  padding: 16px;
+  background-color: #fff;
+  transition: max-height 0.3s ease, visibility 0.3s ease, padding 0.3s ease, background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease; /* Add transitions for various properties */
+  overflow: hidden;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .collapsible-header {
+    padding: 10px 14px;
+  }
+  .collapsible-icon {
+    font-size: 18px;
+  }
+  .collapsible-title {
+    font-weight: normal;
+  }
+  .collapsible-content {
+    padding: 14px;
+  }
+}

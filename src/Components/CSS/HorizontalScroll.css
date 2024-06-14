@@ -1,0 +1,75 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for the horizontal scroll container */
+.horizontal-scroll-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Styles for the horizontal scroll wrapper */
+.horizontal-scroll-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+  padding: 0 10%; /* 10% blank space from both sides */
+}
+
+/* Styles for the horizontal scroll items */
+.horizontal-scroll-item {
+  flex: 0 0 auto;
+  white-space: normal; /* Allow wrapping of content if needed */
+  transition: transform 0.3s ease; /* Smooth animation for item transition */
+}
+
+/* Styles for the scroll buttons */
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff; /* Professional color code for buttons */
+  border: none;
+  padding: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s ease; /* Smooth animation for button color change */
+}
+
+/* Styles for the left scroll button */
+.scroll-button.left {
+  left: 0;
+}
+
+/* Styles for the right scroll button */
+.scroll-button.right {
+  right: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .horizontal-scroll-item {
+    width: 100%; /* Show only 1 item per row on mobile devices */
+  }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .horizontal-scroll-item {
+    width: 50%; /* Show 2 items per row on tablets */
+  }
+}
+
+/* Media Query for Desktop */
+@media (min-width: 1024px) {
+  .horizontal-scroll-item {
+    width: 25%; /* Show 4 items per row on desktop */
+  }
+}

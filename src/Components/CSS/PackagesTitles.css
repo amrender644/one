@@ -1,0 +1,9 @@
+.customDiv {
+    /* border: 1px solid #000; Add a 2px black border around the div */
+    display: flex;
+    justify-content: center; /* Horizontally center the h3 */
+    align-items: center; /* Vertically center the h3 */
+    height: 50px; /* Set a fixed height for the div */
+    background-color: white;
+  }
+  

@@ -1,0 +1,151 @@
+.Home {
+  /* Mobile styles */
+  padding: 1px;
+}
+
+.Hero {
+  background-color: rgb(225, 235, 225);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.HeroContent {
+  /* margin-top: 60px; */
+  margin: 30px;
+}
+
+.HeroContent h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.HeroContent p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ContactUsForm {
+  /* font-size: 16px;
+    margin-bottom: 20px; */
+  float: right;
+  margin: 100px;
+  /* align-items:; */
+}
+
+.ContactFormContainer {
+  float: right;
+  width: 30%;
+  padding: 100px;
+}
+
+.Services {
+  background-color: pink;
+  background-size: cover;
+  background-position: center;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Services h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Services p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Home {
+    padding: 1px;
+  }
+
+  .Hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .Services {
+    height: auto;
+  }
+
+  .ContactUsForm {
+    float: left;
+    /* margin: 100px; */
+  }
+}
+
+/* Mobile CSS (screen size less than 768px) */
+@media only screen and (max-width: 767px) {
+  .Home {
+    padding: 1px;
+  }
+
+  .Hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .Services {
+    height: auto;
+  }
+
+  .ContactUsForm {
+    float: right;
+    margin: 100px;
+  }
+}
+
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .Home {
+    padding: 1px;
+  }
+
+  .Hero {
+    height: 1000px;
+  }
+
+  .Services {
+    height: 1200px;
+  }
+
+  .ContactUsForm {
+    float: right;
+    margin: 100px;
+  }
+}
+
+/* Animations */
+.Hero {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.Services {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

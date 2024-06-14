@@ -1,0 +1,180 @@
+.Home {
+  /* Mobile styles */
+  padding: 1px;
+}
+
+.Hero {
+  background-color: rgb(225, 235, 225);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.HeroContent {
+  /* margin-top: 60px; */
+  margin: 30px;
+}
+
+.HeroContent h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.HeroContent p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.Packages {
+  background-color: rgb(225, 235, 235);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.Packages h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+}
+
+
+.ContactUsPopupDialog{
+  text-align: center;
+  /* padding-bottom: 100px; */
+  /* padding: 100px; */
+}
+
+.ContactUsPopupDialog p{
+  text-align: center;
+}
+
+.HowItWorks{
+  height: auto;
+  padding: 50px 0px 100px;
+  display: grid;
+  place-items: center;
+  background-color: rgb(225, 235, 235);
+}
+
+.HowItWorks h2{
+  display: grid;
+  place-items:center;
+  padding: 50px;
+}
+
+.HowItWorks p{
+  display: grid;
+  place-items:center;
+}
+
+
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Home {
+    padding: 1px;
+  }
+
+  .Hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .Services {
+    height: auto;
+  }
+
+  .ContactUsForm {
+    float: left;
+    /* margin: 100px; */
+  }
+}
+
+/* Mobile CSS (screen size less than 768px) */
+@media only screen and (max-width: 767px) {
+  .Home {
+    padding: 1px;
+  }
+
+  .Hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .Services {
+    height: auto;
+  }
+
+  .ContactUsForm {
+    float: right;
+    margin: 100px;
+  }
+
+  .HowItWorks{
+    height: auto;
+    display: grid;
+    place-items: center;
+    background-color: rgb(225, 235, 235);
+  }
+
+  .HorizontalCrousal{
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .Home {
+    padding: 1px;
+  }
+
+  .Hero {
+    height: 1000px;
+  }
+
+  .Services {
+    height: 1200px;
+  }
+
+  .ContactUsForm {
+    float: right;
+    margin: 100px;
+  }
+
+  .HorizontalCrousal{
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+/* Animations */
+.Hero {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.Services {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

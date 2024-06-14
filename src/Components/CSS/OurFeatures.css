@@ -1,0 +1,22 @@
+.OurFeatures{
+    height: auto;
+    padding: 50px 0px 100px;
+  }
+  
+  .OurFeatures h2{
+    display: grid;
+    place-items:center;
+    padding: 50px;
+  }
+  
+  .OurFeatures p{
+    display: grid;
+    place-items:center;
+  }
+
+  /* Desktop styles */
+@media (min-width: 1024px) {
+    .OurFeatures{
+  padding: 0px 100px 100px;
+    }
+  }
